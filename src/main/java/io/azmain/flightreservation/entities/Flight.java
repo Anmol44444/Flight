@@ -5,13 +5,13 @@ import java.sql.Timestamp;
 import java.util.Date;
 
 @Entity
-public class Flight {
+public class Flight extends AbstractEntity{
 
     private String flightNumber;
-    private String opratingAirlines;
+    private String operatingAirlines;
     private String departureCity;
     private String arrivalCity;
-    private Date dateofDeparture;
+    private Date dateOfDeparture;
     private Timestamp estimatedDepartureTime;
 
 
@@ -23,12 +23,12 @@ public class Flight {
         this.flightNumber = flightNumber;
     }
 
-    public String getOpratingAirlines() {
-        return opratingAirlines;
+    public String getOperatingAirlines() {
+        return operatingAirlines;
     }
 
-    public void setOpratingAirlines(String opratingAirlines) {
-        this.opratingAirlines = opratingAirlines;
+    public void setOperatingAirlines(String operatingAirlines) {
+        this.operatingAirlines = operatingAirlines;
     }
 
     public String getDepartureCity() {
@@ -47,12 +47,12 @@ public class Flight {
         this.arrivalCity = arrivalCity;
     }
 
-    public Date getDateofDeparture() {
-        return dateofDeparture;
+    public Date getDateOfDeparture() {
+        return dateOfDeparture;
     }
 
-    public void setDateofDeparture(Date dateofDeparture) {
-        this.dateofDeparture = dateofDeparture;
+    public void setDateOfDeparture(Date dateOfDeparture) {
+        this.dateOfDeparture = dateOfDeparture;
     }
 
     public Timestamp getEstimatedDepartureTime() {

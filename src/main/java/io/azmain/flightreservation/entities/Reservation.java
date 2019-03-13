@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 
 @Entity
-public class Reservation {
+public class Reservation extends AbstractEntity{
 
     private Boolean checkedIn;
     private int numberOfBags;

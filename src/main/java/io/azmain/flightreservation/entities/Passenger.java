@@ -4,7 +4,7 @@ package io.azmain.flightreservation.entities;
 import javax.persistence.Entity;
 
 @Entity
-public class Passenger {
+public class Passenger extends AbstractEntity{
 
     private String firstName;
     private String lastName;
