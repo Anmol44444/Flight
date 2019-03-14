@@ -7,6 +7,8 @@ import io.azmain.flightreservation.entities.Reservation;
 import io.azmain.flightreservation.repos.FlightRepository;
 import io.azmain.flightreservation.repos.PassengerRepository;
 import io.azmain.flightreservation.repos.ReservationRepository;
+import io.azmain.flightreservation.util.EmailUtil;
+import io.azmain.flightreservation.util.PdfGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +23,12 @@ public class ReservationServiceImpl implements ReservationService {
 
     @Autowired
     PassengerRepository passengerRepository;
+
+    @Autowired
+    PdfGenerator pdfGenerator;
+
+    @Autowired
+    EmailUtil emailUtil;
 
     @Override
     public Reservation bookFlight(ReservationRequest request) {
@@ -43,6 +51,10 @@ public class ReservationServiceImpl implements ReservationService {
         reservation.setCheckedIn(false);
         reservation.setNumberOfBags(2);
         Reservation savedReservation = reservationRepository.save(reservation);
+
+        String filePath = "H:\\Spring\\flight-reservation\\"+savedReservation.getId()+".pdf";
+        pdfGenerator.generatePdf(savedReservation, filePath);
+        emailUtil.sendEMail(passenger.getEmail(),filePath);
 
         return savedReservation;
     }

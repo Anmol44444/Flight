@@ -47,3 +47,12 @@ Form value -> flightId, passengerFirstName
     "numberOfBags": "X",
 }
 ```
+
+
+### Utilities
+
+* Created PdfGenerator Utility.
+* Created Email Sender Utility.
+* When a reservation is make, an email is sent 
+to the passenger email along with the reservation
+pdf.
