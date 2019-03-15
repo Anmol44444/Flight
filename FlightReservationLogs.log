@@ -1,0 +1,34 @@
+2019-03-15 15:00:05.798  INFO 7368 --- [main] i.a.f.FlightReservationApplication       : Starting FlightReservationApplication on Nishan with PID 7368 (H:\Spring\flight-reservation\target\classes started by Azmain in H:\Spring\flight-reservation)
+2019-03-15 15:00:05.805  INFO 7368 --- [main] i.a.f.FlightReservationApplication       : No active profile set, falling back to default profiles: default
+2019-03-15 15:00:07.118  INFO 7368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-15 15:00:07.225  INFO 7368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92ms. Found 4 repository interfaces.
+2019-03-15 15:00:07.656  INFO 7368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$79314bca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-15 15:00:08.111  INFO 7368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-15 15:00:08.142  INFO 7368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-15 15:00:08.142  INFO 7368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-15 15:00:08.151  INFO 7368 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;H:\Installation\Python36-32\Scripts\;H:\Installation\Python36-32\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;H:\Installation\Anaconda;C:\WINDOWS\System32\OpenSSH\;H:\Installation\xampp\php;;H:\Installation\Microsoft VS Code\bin;H:\Installation\nodejs\;H:\Installation\Ruby24-x64\bin;H:\Installation\Anaconda;H:\Installation\Anaconda\Library\mingw-w64\bin;H:\Installation\Anaconda\Library\usr\bin;H:\Installation\Anaconda\Library\bin;H:\Installation\Anaconda\Scripts;C:\Program Files\Java\jdk1.8.0_65\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Azmain\AppData\Local\Microsoft\WindowsApps;C:\Users\Azmain\AppData\Local\atom\bin;C:\Users\Azmain\AppData\Local\Microsoft\WindowsApps;C:\Users\Azmain\AppData\Roaming\npm;.]
+2019-03-15 15:00:08.534  INFO 7368 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-03-15 15:00:08.540  INFO 7368 --- [main] o.a.c.c.C.[.[.[/flightreservation]       : Initializing Spring embedded WebApplicationContext
+2019-03-15 15:00:08.541  INFO 7368 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2586 ms
+2019-03-15 15:00:08.711  INFO 7368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-15 15:00:08.846  INFO 7368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-15 15:00:09.078  INFO 7368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-15 15:00:09.162  INFO 7368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-03-15 15:00:09.163  INFO 7368 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-15 15:00:09.328  INFO 7368 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-03-15 15:00:09.477  INFO 7368 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-03-15 15:00:10.280  INFO 7368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-15 15:00:10.601  INFO 7368 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-03-15 15:00:10.763  INFO 7368 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final org.slf4j.Logger io.azmain.flightreservation.controller.UserController.LOGGER
+2019-03-15 15:00:11.121  INFO 7368 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-15 15:00:11.163  WARN 7368 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-15 15:00:11.429  INFO 7368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2019-03-15 15:00:11.433  INFO 7368 --- [main] i.a.f.FlightReservationApplication       : Started FlightReservationApplication in 6.551 seconds (JVM running for 8.374)
+2019-03-15 15:00:45.193  INFO 7368 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/flightreservation]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-15 15:00:45.194  INFO 7368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-15 15:00:45.201  INFO 7368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-03-15 15:00:45.268 ERROR 7368 --- [http-nio-8080-exec-1] i.a.f.controller.UserController          : ERROR
+2019-03-15 15:00:45.268  WARN 7368 --- [http-nio-8080-exec-1] i.a.f.controller.UserController          : WARN
+2019-03-15 15:00:45.268  INFO 7368 --- [http-nio-8080-exec-1] i.a.f.controller.UserController          : INFO

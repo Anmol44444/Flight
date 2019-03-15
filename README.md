@@ -53,6 +53,12 @@ Form value -> flightId, passengerFirstName
 
 * Created PdfGenerator Utility.
 * Created Email Sender Utility.
-* When a reservation is make, an email is sent 
+* When a reservation is make, an email is sent. 
 to the passenger email along with the reservation
 pdf.
+
+### Logging
+
+* Created a logging system(logback.xml) in resource folder.
+
+
