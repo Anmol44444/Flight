@@ -2,6 +2,7 @@ package io.azmain.flightreservation.util;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
@@ -12,6 +13,11 @@ import java.io.File;
 
 @Component
 public class EmailUtilImpl implements EmailUtil {
+
+    @Value("${io.azmain.flightreservation.itinerary.email.subject}")
+    private String EMAIL_SUBJECT;
+    @Value("${io.azmain.flightreservation.itinerary.email.body}")
+    private String EMAIL_BODY;
 
     @Autowired
     private JavaMailSender sender;
@@ -24,8 +30,8 @@ public class EmailUtilImpl implements EmailUtil {
         try {
             helper = new MimeMessageHelper(message,true);
             helper.setTo(toAddress);
-            helper.setSubject("Your Flight Reservation");
-            helper.setText("Please take a printout of your ticket.");
+            helper.setSubject(EMAIL_SUBJECT);
+            helper.setText(EMAIL_BODY);
             helper.addAttachment("Flight Ticket",new File(filePath));
             sender.send(message);
 

@@ -10,10 +10,14 @@ import io.azmain.flightreservation.repos.ReservationRepository;
 import io.azmain.flightreservation.util.EmailUtil;
 import io.azmain.flightreservation.util.PdfGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ReservationServiceImpl implements ReservationService {
+
+    @Value("${io.azmain.flightreservation.itinerary.dirpath}")
+    private String PDF_DIR;
 
     @Autowired
     FlightRepository flightRepository;
@@ -52,7 +56,7 @@ public class ReservationServiceImpl implements ReservationService {
         reservation.setNumberOfBags(2);
         Reservation savedReservation = reservationRepository.save(reservation);
 
-        String filePath = "H:\\Spring\\flight-reservation\\"+savedReservation.getId()+".pdf";
+        String filePath = PDF_DIR +savedReservation.getId()+".pdf";
         pdfGenerator.generatePdf(savedReservation, filePath);
         emailUtil.sendEMail(passenger.getEmail(),filePath);
 
