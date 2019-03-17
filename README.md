@@ -61,4 +61,16 @@ pdf.
 
 * Created a logging system(logback.xml) in resource folder.
 
+### Externalize static values
+
+* Created few values in application.properties.
+* Used those values in EmailUtilImpl.
+
+
+### Security Configuration
+
+* Encoded password while saving a user.
+* Tried to use role based authorization but it seems to be complicated.
+
+
 

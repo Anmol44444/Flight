@@ -1,0 +1,36 @@
+15-03-2019 15:23:47 - Starting FlightReservationApplication on Nishan with PID 9560 (H:\Spring\flight-reservation\target\classes started by Azmain in H:\Spring\flight-reservation)
+15-03-2019 15:23:47 - No active profile set, falling back to default profiles: default
+15-03-2019 15:23:48 - Bootstrapping Spring Data repositories in DEFAULT mode.
+15-03-2019 15:23:48 - Finished Spring Data repository scanning in 83ms. Found 4 repository interfaces.
+15-03-2019 15:23:49 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a9c76481] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15-03-2019 15:23:49 - Tomcat initialized with port(s): 8080 (http)
+15-03-2019 15:23:49 - Initializing ProtocolHandler ["http-nio-8080"]
+15-03-2019 15:23:49 - Starting service [Tomcat]
+15-03-2019 15:23:49 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+15-03-2019 15:23:49 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;H:\Installation\Python36-32\Scripts\;H:\Installation\Python36-32\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;H:\Installation\Anaconda;C:\WINDOWS\System32\OpenSSH\;H:\Installation\xampp\php;;H:\Installation\Microsoft VS Code\bin;H:\Installation\nodejs\;H:\Installation\Ruby24-x64\bin;H:\Installation\Anaconda;H:\Installation\Anaconda\Library\mingw-w64\bin;H:\Installation\Anaconda\Library\usr\bin;H:\Installation\Anaconda\Library\bin;H:\Installation\Anaconda\Scripts;C:\Program Files\Java\jdk1.8.0_65\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Azmain\AppData\Local\Microsoft\WindowsApps;C:\Users\Azmain\AppData\Local\atom\bin;C:\Users\Azmain\AppData\Local\Microsoft\WindowsApps;C:\Users\Azmain\AppData\Roaming\npm;.]
+15-03-2019 15:23:51 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-03-2019 15:23:51 - Initializing Spring embedded WebApplicationContext
+15-03-2019 15:23:51 - Root WebApplicationContext: initialization completed in 3731 ms
+15-03-2019 15:23:51 - HikariPool-1 - Starting...
+15-03-2019 15:23:51 - HikariPool-1 - Start completed.
+15-03-2019 15:23:51 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+15-03-2019 15:23:51 - HHH000412: Hibernate Core {5.3.7.Final}
+15-03-2019 15:23:51 - HHH000206: hibernate.properties not found
+15-03-2019 15:23:51 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+15-03-2019 15:23:52 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15-03-2019 15:23:52 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15-03-2019 15:23:53 - HHH000397: Using ASTQueryTranslatorFactory
+15-03-2019 15:23:53 - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger io.azmain.flightreservation.controller.UserController.LOGGER
+15-03-2019 15:23:53 - Initializing ExecutorService 'applicationTaskExecutor'
+15-03-2019 15:23:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15-03-2019 15:23:53 - Starting ProtocolHandler ["http-nio-8080"]
+15-03-2019 15:23:54 - Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+15-03-2019 15:23:54 - Started FlightReservationApplication in 7.221 seconds (JVM running for 9.128)
+15-03-2019 15:24:49 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15-03-2019 15:24:49 - Initializing Servlet 'dispatcherServlet'
+15-03-2019 15:24:49 - Completed initialization in 10 ms
+15-03-2019 15:24:49 - ERROR
+15-03-2019 15:24:49 - WARN
+15-03-2019 15:24:49 - INFO

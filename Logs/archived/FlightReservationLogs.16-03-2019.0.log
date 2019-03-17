@@ -1,0 +1,51 @@
+16-03-2019 22:11:22 - Starting FlightReservationApplication on Nishan with PID 4232 (H:\Spring\flight-reservation\target\classes started by Azmain in H:\Spring\flight-reservation)
+16-03-2019 22:11:22 - No active profile set, falling back to default profiles: default
+16-03-2019 22:11:24 - Bootstrapping Spring Data repositories in DEFAULT mode.
+16-03-2019 22:11:24 - Finished Spring Data repository scanning in 112ms. Found 4 repository interfaces.
+16-03-2019 22:11:24 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b9e64e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16-03-2019 22:11:25 - Tomcat initialized with port(s): 8080 (http)
+16-03-2019 22:11:25 - Initializing ProtocolHandler ["http-nio-8080"]
+16-03-2019 22:11:25 - Starting service [Tomcat]
+16-03-2019 22:11:25 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+16-03-2019 22:11:25 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;H:\Installation\Python36-32\Scripts\;H:\Installation\Python36-32\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;H:\Installation\Anaconda;C:\WINDOWS\System32\OpenSSH\;H:\Installation\xampp\php;;H:\Installation\Microsoft VS Code\bin;H:\Installation\nodejs\;H:\Installation\Ruby24-x64\bin;H:\Installation\Anaconda;H:\Installation\Anaconda\Library\mingw-w64\bin;H:\Installation\Anaconda\Library\usr\bin;H:\Installation\Anaconda\Library\bin;H:\Installation\Anaconda\Scripts;C:\Program Files\Java\jdk1.8.0_65\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Azmain\AppData\Local\Microsoft\WindowsApps;C:\Users\Azmain\AppData\Local\atom\bin;C:\Users\Azmain\AppData\Local\Microsoft\WindowsApps;C:\Users\Azmain\AppData\Roaming\npm;.]
+16-03-2019 22:11:27 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-03-2019 22:11:27 - Initializing Spring embedded WebApplicationContext
+16-03-2019 22:11:27 - Root WebApplicationContext: initialization completed in 4082 ms
+16-03-2019 22:11:28 - HikariPool-1 - Starting...
+16-03-2019 22:11:29 - HikariPool-1 - Start completed.
+16-03-2019 22:11:29 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16-03-2019 22:11:29 - HHH000412: Hibernate Core {5.3.7.Final}
+16-03-2019 22:11:29 - HHH000206: hibernate.properties not found
+16-03-2019 22:11:29 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+16-03-2019 22:11:29 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16-03-2019 22:11:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16-03-2019 22:11:30 - HHH000397: Using ASTQueryTranslatorFactory
+16-03-2019 22:11:30 - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger io.azmain.flightreservation.controller.UserController.LOGGER
+16-03-2019 22:11:30 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'encoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+16-03-2019 22:11:30 - Closing JPA EntityManagerFactory for persistence unit 'default'
+16-03-2019 22:11:30 - HikariPool-1 - Shutdown initiated...
+16-03-2019 22:11:30 - HikariPool-1 - Shutdown completed.
+16-03-2019 22:11:30 - Stopping service [Tomcat]
+16-03-2019 22:11:30 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16-03-2019 22:11:31 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field encoder in io.azmain.flightreservation.controller.UserController required a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' in your configuration.
+
