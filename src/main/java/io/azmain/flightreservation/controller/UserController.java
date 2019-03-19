@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -27,7 +29,7 @@ public class UserController {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 
     @PostMapping("/register")
-    public User registerUser(@RequestBody User user){
+    public User registerUser(@RequestBody @Valid User user){
         user.setPassword(encoder.encode(user.getPassword()));
         User savedUser = userRepository.save(user);
         return savedUser;

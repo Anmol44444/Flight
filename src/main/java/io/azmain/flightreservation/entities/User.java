@@ -1,18 +1,30 @@
 package io.azmain.flightreservation.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
+import org.hibernate.validator.constraints.Length;
+
+import javax.persistence.*;
+import javax.validation.constraints.*;
 import java.util.Set;
 
 @Entity
 public class User extends AbstractEntity {
 
+    @NotEmpty(message = "Please provide first name.")
+    @Length(min = 1,max = 20)
     private String firstName;
+
+    @NotEmpty(message = "Please provide last name.")
+    @Length(min = 1,max = 20)
     private String lastName;
+
+    @NotEmpty(message = "Please provide email address.")
+    @Email
     private String email;
+
+    @Length(min = 4,message = "Password length must be greater than 4.")
+    @NotEmpty(message = "Please provide a password.")
     private String password;
+
     @ManyToMany
     @JoinTable(name = "user_role",
             joinColumns = @JoinColumn(name = "user_id"),
